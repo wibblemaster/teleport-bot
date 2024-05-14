@@ -47,7 +47,7 @@ jobs:
       # Ensure that `root` matches the username of a remote SSH username, and
       # that hostname matches an SSH host name that is a part of the Teleport
       # cluster configured for access.
-      run: tsh ssh root@example-node hostname
+      run: tsh ssh root@wibblewobble.dyndns.org hostname
     - name: Run hostname via SSH (OpenSSH)
       run: ssh -F ${{ steps.auth.outputs.ssh-config }} root@example-node.example.teleport.sh hostname
 
