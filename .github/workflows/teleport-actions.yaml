@@ -50,4 +50,3 @@ jobs:
       run: tsh ssh root@wibblewobble.dyndns.org hostname
     - name: Run hostname via SSH (OpenSSH)
       run: ssh -F ${{ steps.auth.outputs.ssh-config }} root@example-node.example.teleport.sh hostname
-
