@@ -49,4 +49,4 @@ jobs:
       # cluster configured for access.
       run: tsh ssh root@wibblewobble hostname
     - name: Run hostname via SSH (OpenSSH)
-      run: ssh -F ${{ steps.auth.outputs.ssh-config }} root@example-node.example.teleport.sh hostname
+      run: ssh -F ${{ steps.auth.outputs.ssh-config }} root@wibblewobble.dyndns.org hostname
